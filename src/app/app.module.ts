@@ -9,14 +9,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NgbModule
+    AppComponent
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LayoutModule
+    LayoutModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

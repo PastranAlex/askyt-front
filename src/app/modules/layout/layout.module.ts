@@ -6,6 +6,7 @@ import {FooterComponent} from './components/footer/footer.component'
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ContentComponent } from './components/content/content.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContentComponent } from './components/content/content.component';
   imports: [
     CommonModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   exports:[
     LayoutPageComponent
