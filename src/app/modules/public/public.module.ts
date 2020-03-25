@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PublicPageComponent } from './container/public-page.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component'
-import {PUBLIC_ROUTES} from './public.routes'
+import { PublicRoutingModule } from './public.routes';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -11,8 +12,9 @@ import {PUBLIC_ROUTES} from './public.routes'
     DashboardComponent
   ],
   imports: [
+    NgbModule,
     CommonModule,
-    PUBLIC_ROUTES
+    PublicRoutingModule,
   ],
   exports:[
     PublicPageComponent

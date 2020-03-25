@@ -6,8 +6,6 @@ import {FooterComponent} from './components/footer/footer.component'
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 @NgModule({
   declarations: [
     LayoutPageComponent,
@@ -18,8 +16,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     RouterModule,
-    HttpClientModule,
-    NgbModule
+    HttpClientModule
   ],
   exports:[
     LayoutPageComponent

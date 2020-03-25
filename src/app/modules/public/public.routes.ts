@@ -1,23 +1,16 @@
 import {RouterModule, Routes } from "@angular/router";
 import { PublicPageComponent } from './container/public-page.component'
+import { NgModule } from '@angular/core';
 import {DashboardComponent} from './components/dashboard/dashboard.component'
 
-const contentRoutes: Routes=[
-    {
-        path:'',
-        component:PublicPageComponent,
-        children:[
-            {path:'dashboard',component:DashboardComponent},
-         
-
-        ]
-         
-    }
-
-    
-
-
+const routes: Routes=[
+    { path:'', component: PublicPageComponent }
 ];
 
+@NgModule({
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
+  })
 
-export const PUBLIC_ROUTES = RouterModule.forChild(contentRoutes);//se le pasa la ruta principal
+
+export class PublicRoutingModule { }
