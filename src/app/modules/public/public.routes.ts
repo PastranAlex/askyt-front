@@ -1,6 +1,6 @@
 import {RouterModule, Routes } from "@angular/router";
-import { PublicPageComponent } from './public-page.component'
-import {DashboardComponent} from '../components/dashboard/dashboard.component'
+import { PublicPageComponent } from './container/public-page.component'
+import {DashboardComponent} from './components/dashboard/dashboard.component'
 
 const contentRoutes: Routes=[
     {
@@ -20,4 +20,4 @@ const contentRoutes: Routes=[
 ];
 
 
-export const PAGES_ROUTES = RouterModule.forChild(contentRoutes);//se le pasa la ruta principal
+export const PUBLIC_ROUTES = RouterModule.forChild(contentRoutes);//se le pasa la ruta principal
