@@ -5,7 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {FooterComponent} from './components/footer/footer.component'
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ContentComponent } from './components/content/content.component';
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -13,7 +13,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     LayoutPageComponent,
     NavbarComponent,
     FooterComponent,
-    ContentComponent
+
   ],
   imports: [
     CommonModule,
