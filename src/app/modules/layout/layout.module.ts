@@ -5,7 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {FooterComponent} from './components/footer/footer.component'
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { ContentComponent } from './components/content/content.component';
+
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
@@ -15,7 +15,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     SidebarComponent,
     FooterComponent,
-    ContentComponent
+
   ],
   imports: [
     CommonModule,
