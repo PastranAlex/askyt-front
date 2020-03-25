@@ -2,7 +2,7 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color" [containerInside]="false">
 
   <!-- Navbar brand -->
-  <mdb-navbar-brand><a class="navbar-brand" href="#">Navbar</a></mdb-navbar-brand>
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Askyt</a></mdb-navbar-brand>
 
   <!-- Collapsible content -->
   <links>
@@ -13,22 +13,20 @@
         <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Features</a>
+        <a class="nav-link waves-light" mdbWavesEffect>Exámenes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link waves-light" mdbWavesEffect>Pricing</a>
+        <a class="nav-link waves-light" mdbWavesEffect>Ubicación</a>
       </li>
 
       <!-- Dropdown -->
       <li class="nav-item dropdown" dropdown>
         <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
-          Basic dropdown<span class="caret"></span></a>
+          Especialidades<span class="caret"></span></a>
         <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
-          <div class="divider dropdown-divider"></div>
-          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Odontología</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Pediatría</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Quineciología</a>
         </div>
       </li>
 
@@ -66,38 +64,4 @@
 
 </mdb-navbar>
 <!--/.Navbar-->
-
-
-<!--CAROUSEL-->
-<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
-      <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-    </div>
-    <div class="carousel-caption">
-      <h3 class="h3-responsive">Light mask</h3>
-      <p>First text</p>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
-      <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-    </div>
-    <div class="carousel-caption">
-      <h3 class="h3-responsive">Strong mask</h3>
-      <p>Secondary text</p>
-    </div>
-  </mdb-carousel-item>
-  <mdb-carousel-item>
-    <div class="view w-100">
-      <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
-      <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-    </div>
-    <div class="carousel-caption">
-      <h3 class="h3-responsive">Slight mask</h3>
-      <p>Third text</p>
-    </div>
-  </mdb-carousel-item>
-</mdb-carousel>
+<router-outlet></router-outlet>
