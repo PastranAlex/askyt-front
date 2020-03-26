@@ -71,7 +71,7 @@ export class UserEffects {
     tap(res =>
       this.fs.emit({
         message: "No se pudo crear el nuevo usuario.",
-        type: "danger"
+        type: "alert alert-danger"
       })
     )
   );
@@ -81,7 +81,7 @@ export class UserEffects {
     ofType<CreateSuccess>(UserActionTypes.CreateSuccess),
     map(action => {
       this.fs.emit({
-        type: "success",
+        type: "alert alert-success",
         message: "Usuario creado correctamente."
       });
       this.router.navigate(["/admin/users"]);
@@ -94,7 +94,7 @@ export class UserEffects {
     ofType<UpdateSuccess>(UserActionTypes.UpdateSuccess),
     map(action => {
       this.fs.emit({
-        type: "success",
+        type: "alert alert-success",
         message: "Usuario actualizado correctamente."
       });
       return new UpdateOne(action.user)
@@ -109,7 +109,7 @@ export class UserEffects {
       return this.usersApi.deleteUser(id).pipe(
         map(response => {
           this.fs.emit({
-            type: "success",
+            type: "alert alert-success",
             message: "Usuario eliminado correctamente."
           });
           return new DeleteSuccess(id);
