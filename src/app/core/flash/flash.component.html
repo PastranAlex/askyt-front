@@ -1,0 +1,2 @@
+<!-- <ngb-alert *ngIf="!_staticAlertClosed" (close)="_staticAlertClosed = true" type="{{_type}}" >{{_message}}</ngb-alert> -->
+<div *ngIf="!_staticAlertClosed" (close)="_staticAlertClosed = true" class="{{_type}}" role="alert" [@flipX]>{{_message}}</div>
