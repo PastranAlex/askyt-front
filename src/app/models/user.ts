@@ -6,7 +6,8 @@ export interface User {
   phone: string;
   rut: string;
   // password: string;
-  RoleId?: number;
+  RoleId: number;
+  Role?: number;
   createdAt: Date;
   deletedAt: Date;
   updatedAt: Date;
